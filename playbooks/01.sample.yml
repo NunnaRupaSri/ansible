@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Run uptime
-      Shell: uptime
+      shell: uptime
     - name: Install vim
       package:
          state: present
