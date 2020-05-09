@@ -1,0 +1,12 @@
+- name: sample
+  hosts: all
+  tasks:
+    -name: Run uptime
+     Shell: uptime
+
+    - name: Install vim
+      package:
+         state: present
+         name: vim
+         use: auto
+
