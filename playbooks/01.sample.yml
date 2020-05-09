@@ -3,6 +3,7 @@
   tasks:
     - name: Run uptime
       shell: uptime
+
     - name: Install vim
       package:
          state: present
