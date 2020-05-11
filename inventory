@@ -1,2 +1,21 @@
-172.31.80.139
+## Nomenclature of a node.
+# project-datacenter-env-appl-node_number.domain
 
+###  myp-us-dev-tmt-01
+### myp-uk-dev-tmt-01
+###  myp-dev-tmt-01.devopsonline.internal
+
+
+# Project: RS- (Robo-Shop)
+# Env: DEV, STG, PRD    
+# APPL: mysql, mongodb, redis, rabbitmq, cart, catalogue, shopping, shipping, payment, user, dispatch    
+
+
+## DC 1
+# nyk 
+ rs-nyk-dev-mongo-01-devopsonline.internal
+
+
+## DC 2
+# lav
+rs-lav-dev-mongo-01-devopsonline.internal
