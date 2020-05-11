@@ -10,3 +10,8 @@
          name: vim
          use: auto
 
+    - name: Install zip     
+      package:
+          state: present
+          name: zip
+          use: auto
