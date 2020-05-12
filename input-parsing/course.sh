@@ -19,4 +19,4 @@ while [ $NUMBER_OF_STUDENTS -gt 0 ]; do
     echo $NAME
     i=$(($i+1))
     NUMBER_OF_STUDENTS=$((NUMBER_OF_STUDENTS-1))
-done
+done        
