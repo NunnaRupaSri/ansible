@@ -22,7 +22,7 @@
 [RS_NYK_PRD_CART]
  rs-nyk-prd-cart-01-devopsonline.internal
 
-[RS_NYK_DEV_CATALOGUE]
+[RS_NYK_PRD-CATALOGUE]
  rs-nyk-prd-catalogue-01-devopsonline.internal
  rs-nyk-prd-catalogue-02-devopsonline.internal
  rs-nyk-prd-catalogue-03-devopsonline.internal
@@ -44,3 +44,10 @@
  rs-lav-prd-catalogue-01-devopsonline.internal
  rs-lav-prd-catalogue-02-devopsonline.internal
  rs-lav-prd-catalogue-03-devopsonline.internal
+
+
+## Group of Groups.
+
+[RS_PRD_CATALOGUE:childern]
+RS_NYK_PRD_CATALOGUE
+RS_LAV_PRD_CATALOGUE
