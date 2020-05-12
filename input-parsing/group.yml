@@ -1,0 +1,14 @@
+#KEY:VALUE
+COURSE_NAME: DEVOPS
+COURSE_TRAINER: RUPA
+COURSE_TIMINGS: 6 PM IST
+#LIST: If key having multiple values then it is list
+CONTACT NUMBER: 
+  - 1234567890
+  - 0987654321
+STUDENT_LIST:
+  - name: sri
+    email: rupasri797@gmail.com
+  - name: rupa
+    email: sri999@gmail.com
+    
