@@ -13,16 +13,16 @@
 
 ## DC 1
 # nyk 
-[RS-NYK-DEV-MONGO]
+[RS_NYK_DEV-_MONGO]
  rs-nyk-dev-mongo-01-devopsonline.internal
 
-[RS-NYK-DEV-MYSQL]
+[RS_NYK_DEV_MYSQL]
  rs-nyk-dev-mysql-01-devopsonline.internal
 
-[RS-NYK-PRD-CART]
+[RS_NYK_PRD_CART]
  rs-nyk-prd-cart-01-devopsonline.internal
 
-[RS-NYK-DEV-CATALOGUE]
+[RS_NYK_DEV_CATALOGUE]
  rs-nyk-prd-catalogue-01-devopsonline.internal
  rs-nyk-prd-catalogue-02-devopsonline.internal
  rs-nyk-prd-catalogue-03-devopsonline.internal
@@ -31,16 +31,16 @@
 ## DC 2
 # lav
 
-[RS-LAV-DEV-MONGO]
+[RS_LAV_DEV_MONGO]
  rs-lav-dev-mongo-01-devopsonline.internal
 
-[RS-LAV-DEV-MYSQL]
+[RS_LAV_DEV_MYSQL]
  rs-lav-dev-mysql-01-devopsonline.internal
 
-[RS-LAV-PRD-CART]
+[RS_LAV_PRD_CART]
  rs-lav-prd-cart-01-devopsonline.internal
 
-[RS-LAV-PRD-CATALOGUE]
+[RS_LAV_PRD_CATALOGUE]
  rs-lav-prd-catalogue-01-devopsonline.internal
  rs-lav-prd-catalogue-02-devopsonline.internal
  rs-lav-prd-catalogue-03-devopsonline.internal
