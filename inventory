@@ -13,7 +13,7 @@
 
 ## DC 1
 # nyk 
-[RS_NYK_DEV-_MONGO]
+[RS_NYK_DEV_MONGO]
  rs-nyk-dev-mongo-01-devopsonline.internal
 
 [RS_NYK_DEV_MYSQL]
@@ -22,7 +22,7 @@
 [RS_NYK_PRD_CART]
  rs-nyk-prd-cart-01-devopsonline.internal
 
-[RS_NYK_PRD-CATALOGUE]
+[RS_NYK_PRD_CATALOGUE]
  rs-nyk-prd-catalogue-01-devopsonline.internal
  rs-nyk-prd-catalogue-02-devopsonline.internal
  rs-nyk-prd-catalogue-03-devopsonline.internal
