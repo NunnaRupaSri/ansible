@@ -57,4 +57,12 @@
       debug:
         msg: "URL = {{URL}}"
 
-#Observation: vars_files going to have higher precedence vars_prompt and vars.
+# Observation: vars_files going to have higher precedence vars_prompt and vars.
+
+
+- name: Variable fro CLI
+  hosts: all
+  tasks:
+    - name: print URL
+      debug:
+        msg: "URL = {{URL}}"
