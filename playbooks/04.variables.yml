@@ -33,6 +33,8 @@
   hosts: all
   vars_file:
     - vars.yml
+  vars:
+    URL: play.google.com
   tasks:
     - name: print URL 
       debug:
