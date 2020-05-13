@@ -1,5 +1,6 @@
 - name: print the message
   hosts: all
   tasks:
-    - debug:
+    - name: Debug Module to print message
+     debug:
        msg: "Hello from task"
