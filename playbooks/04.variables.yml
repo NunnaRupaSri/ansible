@@ -72,7 +72,7 @@
 
 - name: Variable from inventory file
   hosts: all
-  tasks: 
+  tasks:
    - name: print URL
       debug: 
         msg: "URL = {{URL}}"
