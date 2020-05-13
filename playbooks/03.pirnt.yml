@@ -1,4 +1,4 @@
 - hosts: all
   tasks:
-    -debug:
-      msg: "Hello from task"
+    - debug:
+       msg: "Hello from task"
