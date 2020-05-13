@@ -5,6 +5,6 @@
 
 - name: Install MongoDB
   package: 
-    name: mongodb.org
+    name: mongodb-org
     state:  present
-    
+
