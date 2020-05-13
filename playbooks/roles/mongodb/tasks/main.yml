@@ -11,7 +11,8 @@
 - name: Start MongoDB
   service:
     name: mongod
-    state: started
     enable: yes
+    state: started
+    
 
 
