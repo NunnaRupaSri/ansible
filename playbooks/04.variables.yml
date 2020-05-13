@@ -5,8 +5,7 @@
     URL: play.google.com
 
  tasks:
-    - name: print URL
+   - name: print URL
       debug:
         msg: "URL = {{URL}}"
 
-        
