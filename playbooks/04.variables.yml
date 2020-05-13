@@ -56,8 +56,8 @@
     - name: print URL
       debug:
         msg: "URL = {{URL}}"
-      vars:
-        URL: task.google.com
+      #vars:
+      #  URL: task.google.com
 # Observation: vars_files going to have higher precedence vars_prompt and vars.
 
 
