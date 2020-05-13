@@ -40,3 +40,13 @@
     - name: print URL 
       debug:
         msg: "URL = {{URL}}"
+
+# Obseravation: vars_files is having high perecdence than vars. 
+
+- name: variable from user input
+  hosts: all
+  vars_prompt:
+    - name: URL
+        prompt: Enter URL
+  
+  
