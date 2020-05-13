@@ -10,7 +10,8 @@
   
 - name: Start MongoDB
   service: 
-    name: mongo
+    name: mongod
+    daemon: reload
     state: started
     enable: yes
 
