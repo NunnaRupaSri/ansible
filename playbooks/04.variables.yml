@@ -3,8 +3,8 @@
   ## Declare variables on play level
   vars: 
    URL: play.google.com
-
- tasks:
+   
+  tasks:
    - name: print URL
      debug:
        msg: "URL = {{URL}}"
