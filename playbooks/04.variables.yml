@@ -48,5 +48,8 @@
   vars_prompt:
     - name: URL
         prompt: Enter URL
-  
+  tasks:
+    - name: print URL 
+      debug:
+        msg: "URL = {{URL}}"
   
