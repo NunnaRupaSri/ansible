@@ -28,3 +28,12 @@
         # we can declares variable from task level as well
 
 # Observation: We can have a declare variable in task level but the local variable task going to have higher precedence 
+
+- name: variable for a demo
+  hosts: all
+  vars_file:
+    - vars.yml
+  tasks:
+    - name: print URL 
+      debug:
+        msg: "URL = {{URL}}"
