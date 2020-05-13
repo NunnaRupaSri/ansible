@@ -53,7 +53,7 @@
     - vars.yml
 
   tasks:
-    - name: print 
+    - name: print URL
         msg: "URL = {{URL}}"
       tasks:
         URL: task.google.com
