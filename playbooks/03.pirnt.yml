@@ -1,0 +1,5 @@
+- name: Print a Message
+  host: all
+  tasks:
+  -debug:
+    msg: "Hello from task"
