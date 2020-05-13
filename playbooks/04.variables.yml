@@ -75,7 +75,7 @@
   tasks: 
    - name: print URL
       debug: 
-      msg: "URL = {{URL}}"
+        msg: "URL = {{URL}}"
 
 ## precedence list
 ##1-command line
