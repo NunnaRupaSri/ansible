@@ -7,4 +7,11 @@
   package: 
     name: mongodb-org
     state:  present
+  
+- name: Start service
+  service: 
+    name: mongod
+    state: started
+    enable: yes
+    
 
