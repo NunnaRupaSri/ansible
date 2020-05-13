@@ -2,6 +2,6 @@
   hosts: all
   tasks:
    - name: Copy mongo.repo
-      copy: 
+     copy: 
         src: mongo.repo
         dest: /tmp
