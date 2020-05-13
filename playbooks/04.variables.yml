@@ -45,7 +45,7 @@
 
 - name: variable from user input
   hosts: all
-   vars_prompt:
+  vars_prompt:
     - name: URL
       prompt: Enter URL
   vars_files:
