@@ -1,0 +1,4 @@
+- name: Robo-Shop Application setup
+  hosts: all
+  tasks:
+    

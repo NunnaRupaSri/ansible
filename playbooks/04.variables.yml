@@ -83,3 +83,5 @@
 ##3-vars_file
 ##4-vars_prompt
 ##5-vars   
+##6- variable from inventory, hosts
+##7- variable from inventory  , group
