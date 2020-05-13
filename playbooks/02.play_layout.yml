@@ -4,7 +4,7 @@
     - name: Task1 in play1
       debug:
 
-- name: play2
+- name: play
   hosts: all
   tasks:
     - name: Task1 in play2
