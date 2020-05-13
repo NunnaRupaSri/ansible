@@ -13,3 +13,17 @@
       debug:
         msg: "URL = {{URL}}"    
 
+## Observation: we can declare a variable  in a play and that variable can be available to all the tasks in the play
+
+- name: variable demo from tasks
+  hosts: all
+  vars:
+    URL: play.google.com
+  tasks:
+    - name: print URL
+      debug: 
+        msg:  "URL = {{URL}}"
+      vars:
+        URL: task.google.com
+        # we can declares variable from task level as well
+        
