@@ -47,8 +47,8 @@
   hosts: all
   vars_prompt:
     - name: URL
-        prompt: Enter URL
-        
+      prompt: Enter URL
+
   tasks:
     - name: print URL 
       debug:
