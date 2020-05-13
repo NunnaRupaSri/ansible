@@ -71,9 +71,9 @@
 # Observation: the highest precedence goes to -e cli
 
 
-
-#-command line
-#-vars_file
-#-vars_prompt
-#-task
-#-vars
+## precedence list
+##1-command line
+##2-tasks
+##3-vars_file
+##4-vars_prompt
+##5-vars  
