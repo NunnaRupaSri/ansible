@@ -45,6 +45,8 @@
 
 - name: variable from user input
   hosts: all
+  vars_file:
+    - vars.yml
   vars_prompt:
     - name: URL
       prompt: Enter URL
@@ -53,4 +55,5 @@
     - name: print URL 
       debug:
         msg: "URL = {{URL}}"
-  
+
+#Observation: vars_Prompt going to have higher precedence vars_files and vars.
