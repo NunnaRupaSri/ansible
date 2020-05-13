@@ -2,10 +2,10 @@
   host: all
   ## Declare variables on play level
   vars: 
-    URL: play.google.com
+   URL: play.google.com
 
  tasks:
    - name: print URL
-      debug:
-        msg: "URL = {{URL}}"
+     debug:
+       msg: "URL = {{URL}}"
 
