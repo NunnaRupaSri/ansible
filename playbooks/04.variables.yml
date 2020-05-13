@@ -26,4 +26,5 @@
       vars:
         URL: task.google.com
         # we can declares variable from task level as well
-        
+
+# Observation: We can have a declare variable in task level but the local variable task going to have higher precedence 
