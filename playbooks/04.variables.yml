@@ -9,3 +9,7 @@
       debug:
         msg: "URL = {{URL}}"
 
+    - name: Print URL one more time
+      debug:
+        msg: "URL = {{URL}}"    
+
