@@ -3,4 +3,4 @@
   tasks:
     - name: Debug Module to print message
         debug:
-         msg: "Hello from task"
+        msg: "Hello from task"
