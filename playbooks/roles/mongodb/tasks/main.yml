@@ -8,10 +8,10 @@
     name: mongodb-org
     state:  present
   
-- name: Start service
+- name: Start MongoDB
   service: 
-    name: mongod
+    name: mongo
     state: started
     enable: yes
-    
+
 
