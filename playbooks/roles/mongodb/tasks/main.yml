@@ -9,7 +9,7 @@
     state:  present
   
 - name: Start MongoDB
-  service:
+  systemd:
     name: mongod
     daemon_reload: yes
     state: started
