@@ -48,6 +48,7 @@
   vars_prompt:
     - name: URL
       prompt: Enter URL
+      private: no       
   vars_files:
     - vars.yml
 
@@ -56,4 +57,4 @@
       debug:
         msg: "URL = {{URL}}"
 
-#Observation: vars_Prompt going to have higher precedence vars_files and vars.
+#Observation: vars_files going to have higher precedence vars_prompt and vars.
