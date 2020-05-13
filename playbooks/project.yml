@@ -1,4 +1,7 @@
 - name: Robo-Shop Application setup
   hosts: all
   tasks:
-    
+    - name: Copy Mongo Repo
+        copy:
+          src: mongo.repo
+          dest: /etc/yum.repos.d/mongo.repo
