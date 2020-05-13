@@ -1,0 +1,7 @@
+- name: Demo on Privilleges escalation
+  hosts: all
+  tasks:
+   - name: Copy mongo.repo
+      copy: 
+        src: mongo.repo
+        dest: /tmp
