@@ -1,0 +1,5 @@
+- name: demo
+  hosts: all
+  tasks: 
+    - name: Replace a string
+      
