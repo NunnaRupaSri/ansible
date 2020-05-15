@@ -1,5 +1,5 @@
 - name: demo
-  hosts: all
+  # hosts: all
   tasks: 
     - name: Replace a string
-      
+      replace
