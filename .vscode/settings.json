@@ -3,5 +3,12 @@
 
         "markdown"
     ],
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.tabCompletion": "on",
+    "editor.suggest.localityBonus": true,
+    "editor.suggest.statusBar.visible": true,
+    "editor.find.autoFindInSelection": "always",
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "emmet.showSuggestionsAsSnippets": true
 }
