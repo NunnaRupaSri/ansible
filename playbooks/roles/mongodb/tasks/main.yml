@@ -24,7 +24,7 @@
 - name: Load Schema
   shell: mongo localhost {{item}}
   args:
-    chdir: /tmp/robo-shop/mongod
+    chdir: /tmp/robo-shop/mongo
   loop:
     - catalogue.js
     - user.js 
