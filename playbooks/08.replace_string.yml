@@ -4,5 +4,5 @@
     - name: replace a string
       replace:
         path: /tmp/mongod.conf
-        regexp: "27017"
-        replace: "port: 27018" 
+        regexp: "27018"
+        replace: "port: 27017" 
