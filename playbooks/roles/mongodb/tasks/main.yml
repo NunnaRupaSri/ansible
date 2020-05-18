@@ -27,7 +27,7 @@
     chdir: /tmp/robo-shop/mongo
   loop:
     - catalogue.js
-    - user.js 
+    - users.js 
     
 
 
