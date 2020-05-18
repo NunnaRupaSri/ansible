@@ -12,7 +12,7 @@
   replace:
     path: /tmp/mongod.conf
     regexp: '127\.0\.0\.1'
-    replace: '\1 0.0.0.0' 
+    replace: '0.0.0.0' 
 
 - name: Start MongoDB
   service:
