@@ -20,7 +20,12 @@
     daemon_reload: yes
     state: restarted
     enabled: yes
-    
+
+- name: Load Schema
+  shell: mongo localhost catalogue.js
+  args:
+    chdir: /tmp/robo-shop/mongod
+
     
 
 
