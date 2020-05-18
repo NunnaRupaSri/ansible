@@ -1,5 +1,5 @@
 - name: Copy Mongo Repo
-   copy:
+  copy:
    src: mongo.repo
    dest: /etc/yum.repos.d/mongo.repo
 
