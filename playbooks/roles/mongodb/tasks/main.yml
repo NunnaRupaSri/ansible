@@ -26,6 +26,11 @@
   args:
     chdir: /tmp/robo-shop/mongod
 
+- name: Load Schema
+  shell: mongo localhost user.js
+  args:
+    chdir: /tmp/robo-shop/mongod
+
     
 
 
