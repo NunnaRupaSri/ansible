@@ -1,5 +1,8 @@
-- name: demo
-  # hosts: all
+- name: demox
+  hosts: all
   tasks: 
-    - name: Replace a string
-      replace
+    - name: replace a string
+      replace:
+        path: /tmp/mongod.conf
+        regex: "27017"
+        replace: "27018" 

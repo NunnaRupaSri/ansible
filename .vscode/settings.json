@@ -10,5 +10,6 @@
     "editor.find.autoFindInSelection": "always",
     "workbench.settings.openDefaultKeybindings": true,
     "workbench.editor.scrollToSwitchTabs": true,
-    "emmet.showSuggestionsAsSnippets": true
+    "emmet.showSuggestionsAsSnippets": true,
+    "files.autoGuessEncoding": true
 }
