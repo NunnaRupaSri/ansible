@@ -1,0 +1,4 @@
+- name: Clone RoboShop git repo
+  git:
+    repo: https://rkb03:password@gitlab.com/d45/robot-shop.git
+    dest: /tmp/robo-shop
