@@ -7,12 +7,18 @@
   package: 
     name: mongodb-org
     state:  present
-  
+
+- name: replace listen IP for MongoDB
+  replace: 
+    path: /etc/mongod.conf
+    regexp: '127\.0\.0\.0'
+    replace: '0.0.0.0'
+
 - name: Start MongoDB
   service:
     name: mongod
     daemon_reload: yes
-    state: started
+    state: restarted
     enabled: yes
     
     
