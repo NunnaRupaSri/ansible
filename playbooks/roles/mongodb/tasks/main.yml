@@ -1,8 +1,7 @@
 - name: Copy Mongo Repo
-  hosts: all
-  copy:
-    src: mongo.repo
-    dest: /etc/yum.repos.d/mongo.repo
+   copy:
+   src: mongo.repo
+   dest: /etc/yum.repos.d/mongo.repo
 
 - name: Install MongoDB
   package: 
