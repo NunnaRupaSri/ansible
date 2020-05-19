@@ -1,4 +1,4 @@
--name: Demo of Conditionals
+- name: Demo of Conditionals
   hosts: all
   tasks:
     - shell: /bin/true
