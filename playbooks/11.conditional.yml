@@ -3,9 +3,11 @@
   tasks:
     - command: /bin/true
       register: result
+
     - debug:
       msg: Nice, God Job
       when: result is failed
+      
     - debug:
       msg: Bad, Try Again
       when:
