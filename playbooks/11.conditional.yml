@@ -4,13 +4,13 @@
   - shell: /bin/true
     register: result
     
-    
-  - name: print OK
-    debug:
-      msg: Nice, Good Job
-    when: result is succeeded.
 
-  - name: Print NotOk
-    debug:
-      msg: Bad, Try Again
-    when: result is Failed.
+    - name: print OK
+      debug:
+        msg: Nice, Good Job
+      when: result is succeeded.
+
+    - name: Print NotOk
+      debug:
+        msg: Bad, Try Again
+      when: result is Failed.
