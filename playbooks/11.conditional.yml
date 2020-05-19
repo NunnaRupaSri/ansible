@@ -8,8 +8,8 @@
       debug:
         msg: Nice, Good Job
       when: result is succeeded
-
-    - name: Print NotOk
+    
+    - name: print NotOK
       debug:
         msg: Bad, Try Again
       when: result is Failed
