@@ -5,11 +5,13 @@
       register: result
     
     - name: print OK
-      debug:
-        msg: Nice, Good Job
-      when: result is succeeded.
+      tasks:
+        debug:
+          msg: Nice, Good Job
+        when: result is succeeded.
 
     - name: Print NotOk
-      debug:
-        msg: Bad, Try Again
-      when: result is Failed.
+      tasks:
+        debug:
+          msg: Bad, Try Again
+        when: result is Failed.
