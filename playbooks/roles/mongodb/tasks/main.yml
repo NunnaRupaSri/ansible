@@ -33,6 +33,5 @@
   loop:
     - catalogue.js
     - users.js 
-  when: Schema loaded succeeded
-
+  when: Schema loaded failed
 
