@@ -8,9 +8,9 @@
   - name: print OK
     debug:
       msg: Nice, Good Job
-      when: result is succeeded.
+    when: result is succeeded.
 
   - name: Print Not Ok
     debug:
       msg: Bad, Try Again
-      when: result is Failed.
+     when: result is Failed.
