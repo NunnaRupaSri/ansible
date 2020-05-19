@@ -5,10 +5,12 @@
     register: result
     ignore_errors: True 
 
-  - debug:
-    msg: Nice, Good Job
-    when: result is succeeded.
+  - name: print OK
+    debug:
+      msg: Nice, Good Job
+      when: result is succeeded.
 
-  - debug:
-    msg: Bad, Try Again
-    when: result is Failed.
+  - name: Print Not Ok
+    debug:
+      msg: Bad, Try Again
+      when: result is Failed.
