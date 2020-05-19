@@ -21,10 +21,9 @@
     state: restarted
     enabled: yes
 
-- name: Import the Mongodb Schema 
+- name: Load Schema 
   include_tasks: schema.yml
   loop:
-    - catalogue.js
-    - users.js
-
+    - catalogue
+    - users
 
