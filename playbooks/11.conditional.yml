@@ -1,13 +1,17 @@
 - name: Demo of Conditionals
   hosts: all
   tasks:
-    - shell: /bin/true
-      register: result
+  - command: /bin/false
+    register: result
+    ignore_errors: True
 
-    - debug:
-      msg: Nice, Good Job
-      when: result is success
-    
-    - debug:
-      msg: Bad, Try Again
-      when: result is fail
+  - debug:
+    msg: nice, Good Job
+    when: result is failed
+
+  # In older versions of ansible use ``success``, now both are valid but succeeded uses the correct tense.
+  - command: /bin/something_else
+    when: result is succeeded
+
+  - command: /bin/still/something_else
+    when: result is skipped
