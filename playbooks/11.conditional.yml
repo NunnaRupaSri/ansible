@@ -12,4 +12,4 @@
     - name: Print NotOk
       debug:
         msg: Bad, Try Again
-      hen: result is Failed.
+      when: result is Failed.
