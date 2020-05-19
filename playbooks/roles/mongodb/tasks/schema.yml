@@ -1,5 +1,5 @@
 - name: Check Schema Exists
-  shell: echo show dbs | mongo | grep 
+  shell: echo show dbs | mongo | grep {{item}}
   register: out
   ignore_errors: True
 
