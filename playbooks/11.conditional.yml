@@ -1,13 +1,13 @@
 - name: Demo of Conditionals
   hosts: all
   tasks:
-    - shell: /bin/true
-      register: result
+   - shell: /bin/true
+     register: result
 
    - debug:
-      msg: Nice, Good Job
-      when: result is success
+     msg: Nice, Good Job
+     when: result is success
 
    - debug: 
-      msg: Bad, Try Again
-      when: result is fail
+     msg: Bad, Try Again
+     when: result is fail
