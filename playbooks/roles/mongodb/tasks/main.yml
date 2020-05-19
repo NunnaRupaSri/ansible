@@ -22,7 +22,7 @@
     enabled: yes
 
 - name: Check Schema Exists
-  shell: echo show dbs | mongo | grep {{item}}
+  shell: echo show dbs | mongo | grep catalogue
   register: out
   ignore_errors: True
 
