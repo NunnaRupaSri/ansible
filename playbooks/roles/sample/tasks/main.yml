@@ -4,3 +4,6 @@
 
 - name: Hello from demo1 sample
   import_tasks: demo1.yml
+  loop:
+    - demo1
+    - demo2
