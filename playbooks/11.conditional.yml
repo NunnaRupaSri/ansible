@@ -5,8 +5,8 @@
       register: result
 
     - debug:
-      msg: Nice, Good Job
-      when: result is success
+        msg: Nice, Good Job
+        when: result is success
     
     - debug:
       msg: Bad, Try Again
