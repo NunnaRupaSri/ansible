@@ -1,0 +1,3 @@
+- name: hello from demo1
+  tasks:
+    msg: hello from demo1

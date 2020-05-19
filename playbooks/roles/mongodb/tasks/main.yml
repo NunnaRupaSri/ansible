@@ -21,17 +21,5 @@
     state: restarted
     enabled: yes
 
-- name: Check Schema Exists
-  shell: echo show dbs | mongo | grep catalogue
-  register: out
-  ignore_errors: True
 
-- name: Load Schema
-  shell: mongo localhost {{item}}
-  args:
-    chdir: /tmp/robo-shop/mongo
-  loop:
-    - catalogue.js
-    - users.js 
-  when: out is failed
 

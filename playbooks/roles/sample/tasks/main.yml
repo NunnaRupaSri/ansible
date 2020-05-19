@@ -1,4 +1,7 @@
 - name: Hello from role
   debug:
     msg: Hello from role
+
+- name: import demo1
+  import_tasks: demo1.yml
     
