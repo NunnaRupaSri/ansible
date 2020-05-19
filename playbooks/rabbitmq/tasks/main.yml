@@ -1,6 +1,6 @@
 - name: Install ESL-ERLANG
   package:
-      name: yum install https://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_22.2.1-1~centos~7_amd64.rpm
+      name: yum install https://releases.ansible.com/ansible-tower/rpm/epel-7-x86_64/ansible-tower-3.0.1-1.el7.centos.x86_64.rpm
       state: present
 
 - name: setup repos
