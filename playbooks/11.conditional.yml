@@ -7,7 +7,7 @@
     - debug:
       msg: Nice, God Job
       when: result is failed
-      
+
     - debug:
       msg: Bad, Try Again
       when:
