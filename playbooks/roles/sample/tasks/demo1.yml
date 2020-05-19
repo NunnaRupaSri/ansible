@@ -2,4 +2,6 @@
   debug:
     msg: hello from demo
     
-     
+- name: print item
+  debug:
+    msg: item = {{item}}
