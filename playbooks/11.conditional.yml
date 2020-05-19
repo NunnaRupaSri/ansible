@@ -3,6 +3,7 @@
   tasks:
   - shell: /bin/true
     register: result
+    ignore_errors: True 
 
   - debug:
     msg: Nice, Good Job
