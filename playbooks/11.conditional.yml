@@ -1,8 +1,8 @@
 - name: Demo of Conditionals
   hosts: all
   tasks:
-  - shell: /bin/true
-    register: result
+    - shell: /bin/true
+      register: result
     
 
     - name: print OK
