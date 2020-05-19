@@ -1,7 +1,0 @@
-- name: Hello from role
-  hosts: all
-  debug:
-    msg: Hello from role
-
-- name: import demo task
-  import_tasks: demo1.yml
