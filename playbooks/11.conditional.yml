@@ -3,6 +3,7 @@
   tasks:
     - command: /bin/false
       register: result
+      ignore_errors: True
     
     - name: print OK
       debug:
