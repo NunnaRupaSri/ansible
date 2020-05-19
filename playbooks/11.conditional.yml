@@ -1,7 +1,11 @@
 - name: Demo of Conditionals
   hosts: all
   tasks:
-    - name: Print
-      debug: 
-        msg: Hello
-      when: 
+    - command: /bin/true
+      register: result
+    - debug:
+      msg: Nice, God Job
+      when: result is failed
+    - debug:
+      msg: Bad, Try Again
+      when:
