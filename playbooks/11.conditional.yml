@@ -4,10 +4,10 @@
     - command: /bin/true
       register: result
 
-    - debug: 
-      msg: Nice, God Job
-      when: result is failed
+    - debug:
+      msg: Nice, Good Job
+      when: result is success
 
     - debug: 
       msg: Bad, Try Again
-      when:
+      when: result is fail
