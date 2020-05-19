@@ -21,6 +21,11 @@
     state: restarted
     enabled: yes
 
+- name: Check Schema Exists
+  shell: echo show dbs | mongo | grep {{item}}
+  register: out
+  ignore_errors: True
+
 - name: Load Schema
   shell: mongo localhost {{item}}
   args:
@@ -28,6 +33,6 @@
   loop:
     - catalogue.js
     - users.js 
-    
+  when: Schema loaded succeeded
 
 
