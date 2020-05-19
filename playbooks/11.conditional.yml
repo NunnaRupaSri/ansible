@@ -4,10 +4,10 @@
     - shell: /bin/true
       register: result
 
-    - debug:
-      msg: Nice, Good Job
-      when: result is success
+      - debug:
+        msg: Nice, Good Job
+        when: result is success
 
-    - debug: 
-      msg: Bad, Try Again
-      when: result is fail
+      - debug: 
+        msg: Bad, Try Again
+        when: result is fail
