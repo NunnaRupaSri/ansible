@@ -4,6 +4,7 @@
   - shell: /bin/true
     register: result
     
+    
   - name: print OK
     debug:
       msg: Nice, Good Job
