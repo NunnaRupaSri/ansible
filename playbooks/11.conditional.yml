@@ -1,0 +1,7 @@
+- name: Demo of Conditionals
+  hosts: all
+  tasks:
+    - name: Print
+      debug: 
+        msg: Hello
+      when: 
