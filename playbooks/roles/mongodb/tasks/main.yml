@@ -33,5 +33,5 @@
   loop:
     - catalogue.js
     - users.js 
-  when: Schema loaded failed
+  when: out is failed
 
