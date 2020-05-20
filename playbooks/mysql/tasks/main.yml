@@ -20,3 +20,5 @@
     ignore_tasks: yes
     register: out
 
+- debug:
+    msg: "{{out}}"
