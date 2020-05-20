@@ -1,11 +1,11 @@
--name: install pip
-  tasks:
+- name: Install Pip
+  package:
     name: python2-pip
-    state: present
+    state: present 
 
-- name: install mysql pip module
-    pip:
-      name: PyMySQL
+- name: Install MySQL PIP Module 
+  pip:
+    name: PyMySQL
 
 - name: Grap the  exiting root password
   shell: cat /var/log/mysqld.log | grep password | tail -1 | awk '{print $NF}'
