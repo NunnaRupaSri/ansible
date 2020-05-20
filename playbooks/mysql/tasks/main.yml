@@ -1,9 +1,9 @@
-- name: Restore Mariadb Ribs
-    package:
-        name: mariadb-ribs
-        state: present
+- name: Remove MariaDB Libs
+  package:
+    name: mariadb-libs
+    state: absent 
 
-- name: check mysql installation
-    package: 
-        name: mysql-community-server
-        state: latest
+- name: Check MySQL Installed 
+  package:
+    name: mysql-community-server
+    state: latest
