@@ -11,4 +11,7 @@
   shell: cat /var/log/mysqld.log | grep password | tail -1 | awk '{print $NF}'
   register: out
 
-- name: Copy Schema file of Password 
+- name: Copy Schema file of Password Reset
+  copy: 
+    src: pass-reset-schema.sql
+    dest: /tmp/pass-reset-schema.sql
