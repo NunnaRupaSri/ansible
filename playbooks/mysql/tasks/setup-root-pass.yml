@@ -15,3 +15,12 @@
   copy: 
     src: pass-reset-schema.sql
     dest: /tmp/pass-reset-schema.sql
+
+- name: Import Schema File for Password Reset 
+  shell: mysql --connect-expired-password -uroot -p"{{out.stdout}}" </tmp/pass-reset-schema.sql 
+
+- name: Create a lock file 
+  file:
+    path: /etc/my.cnf.d/password-reset
+    state: touch 
+
