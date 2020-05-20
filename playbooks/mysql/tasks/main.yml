@@ -20,5 +20,6 @@
     ignore_tasks: yes
     register: out
 
-- debug:
-    msg: "{{out}}"
+- name: Set up defaullt root password
+  import_tasks: setup-root-pass.yml
+  when: out is failed
