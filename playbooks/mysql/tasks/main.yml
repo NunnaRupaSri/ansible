@@ -1,10 +1,9 @@
 - name: Restore Mariadb Ribs
     package:
-        name: mariadb-Ribs
+        name: mariadb-ribs
         state: present
 
 - name: check mysql installation
     package: 
         name: mysql-community-server
         state: latest
-        
