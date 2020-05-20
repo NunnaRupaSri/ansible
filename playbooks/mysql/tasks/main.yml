@@ -17,8 +17,8 @@
 - name: Check root Password is setup or not
   file:
     path: /etc/my.cnf/password.reset
-    ignore_tasks: yes
-    register: out
+  ignore_tasks: yes
+  register: out
 
 - name: Set up defaullt root password
   import_tasks: setup-root-pass.yml
