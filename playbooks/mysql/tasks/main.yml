@@ -7,3 +7,9 @@
   package:
     name: mysql-community-server
     state: latest
+  ignore_tasks: True
+  register: out
+
+- name: Install mysql
+  import_tasks: install.yml
+  when: out is failed
