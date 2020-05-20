@@ -1,0 +1,14 @@
+-name: install pip
+  tasks:
+    name: python2-pip
+    state: present
+
+- name: install mysql pip module
+    pip:
+      name: PyMySQL
+
+- name: Grap the  exiting root password
+  shell: cat /var/log/mysqld.log | grep password | tail -1 | awk '{print $NF}'
+  register: out
+
+- name: Copy Schema file of Password 
