@@ -13,7 +13,7 @@
 
 - name: Start RabbitMQ
   service:
-    name: mongod
+    name:  
     daemon_reload: yes
     state: restarted
     enabled: yes
