@@ -22,7 +22,8 @@
     name: all
     target: /tmp/pass-reset-schema.sql
     login_user: root
-    login_password: "{{out.stdin}}"
+    login_password: "{{out.stdout}}"
+
 #- name: Import Schema File for Password Reset 
 #  shell: mysql --connect-expired-password -uroot -p"{{out.stdout}}" </tmp/pass-reset-schema.sql 
 
