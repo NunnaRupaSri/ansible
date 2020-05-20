@@ -14,11 +14,11 @@
   include_tasks: install.yml 
   when: out is failed 
 
-- name: Check root Password is setup or not
+- name: Check root password is setup or not 
   file:
-    path: /etc/my.cnf/password.reset
-  ignore_tasks: yes
-  register: out
+    path: /etc/my.cnf.d/password-reset
+  ignore_errors: yes 
+  register: out 
 
 - name: Set up defaullt root password
   import_tasks: setup-root-pass.yml
