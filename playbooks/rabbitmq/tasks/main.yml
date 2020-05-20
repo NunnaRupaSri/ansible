@@ -9,6 +9,7 @@
 - name: Install RabbitMQ
   package:
     name: rabbitmq-server
+    state: present
 
 - name: Start RabbitMQ
   service:
