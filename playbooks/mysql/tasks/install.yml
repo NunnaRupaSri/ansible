@@ -3,3 +3,13 @@
     src: https://downloads.mysql.com/archives/get/p/23/file/mysql-5.7.28-1.el7.x86_64.rpm-bundle.tar
     dest: /tmp/robo-shop/mysql
     remote_src: yes
+
+- name: Install mysql
+  package:
+    name: /tmp/robo-shop/mysql/{{item}}
+    state: present
+  loop:
+  - mysql-community-client-5.7.28-1.el7.x86_64.rpm
+  - mysql-community-common-5.7.28-1.el7.x86_64.rpm 
+  - mysql-community-libs-5.7.28-1.el7.x86_64.rpm 
+  - mysql-community-server-5.7.28-1.el7.x86_64.rpm
