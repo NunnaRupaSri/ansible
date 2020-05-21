@@ -21,10 +21,7 @@
   register: out 
 
 - name: Setup Default Root Password 
-  include_tasks: setup-root-pass.yml
+  import_tasks: setup-root-pass.yml
   when: out is failed
 
 
-- name: Set up defaullt root password
-  include_tasks: setup-root-pass.yml
-  when: out is failed 
