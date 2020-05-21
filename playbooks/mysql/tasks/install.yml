@@ -9,9 +9,9 @@
     name: /tmp/robo-shop/mysql/{{item}}
     state: present
   loop:
-  - mysql-community-libs-5.7.28-1.el7.x86_64.rpm 
   - mysql-community-common-5.7.28-1.el7.x86_64.rpm 
-  - mysql-community-client-5.7.28-1.el7.x86_64.rpm
+  - mysql-community-libs-5.7.28-1.el7.x86_64.rpm 
+    - mysql-community-client-5.7.28-1.el7.x86_64.rpm
   - mysql-community-server-5.7.28-1.el7.x86_64.rpm
 
 - name: Start MySQL Service
