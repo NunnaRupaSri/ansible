@@ -1,1 +1,6 @@
 - name: Demo on filters
+    hosts: all
+    vars:
+        URL: https://google.com
+    tasks:
+        - name: filter domain
