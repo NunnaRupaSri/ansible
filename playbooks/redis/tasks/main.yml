@@ -1,0 +1,17 @@
+- name: Install redis repos
+  package: 
+    name: yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
+    state: present
+
+- name: Install Redis
+  yum: 
+    name: redis
+    state: installed
+    enablerepo: remi
+
+- name: Start Redis
+  service: 
+  name: redis
+  state: started
+  enabled: yes
+  
