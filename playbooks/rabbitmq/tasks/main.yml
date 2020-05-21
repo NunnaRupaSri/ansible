@@ -1,8 +1,6 @@
 - name: Install ESL-ERLANG
   package:
       name: https://packages.erlang-solutions.com/erlang/rpm/centos/7/x86_64/esl-erlang_22.2.1-1~centos~7_amd64.rpm
-      dest: /tmp/robo-shop/mysql
-      remote_src: yes
       state: present
 
 - name: setup repos
