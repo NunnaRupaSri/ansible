@@ -5,4 +5,6 @@
   #  - mongodb
   #  - rabbitmq
   #  - mysql
-    - redis
+  #  - redis
+  - node.js
+  
