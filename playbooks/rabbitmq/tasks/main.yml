@@ -5,6 +5,8 @@
 
 - name: setup repos
   shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash
+    dest: /tmp/robo-shop/mysql
+    remote_src: yes
 
 - name: Install RabbitMQ
   package:
