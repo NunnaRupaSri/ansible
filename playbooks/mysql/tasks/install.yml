@@ -29,4 +29,3 @@
     name: mysqld
     daemon_reload: yes
     state: started
-    enable: yes 
