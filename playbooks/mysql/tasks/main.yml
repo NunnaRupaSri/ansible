@@ -11,7 +11,7 @@
   register: out 
 
 - name: Install MySQL 
-  include_tasks: install.yml 
+  import_tasks: install.yml 
   when: out is failed 
 
 - name: Check root password is setup or not 
