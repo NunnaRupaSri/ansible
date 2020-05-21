@@ -1,6 +1,6 @@
 - name: Setup MySQL Download Directory 
   file:
-    path: /tmp/robo-shop/mysql
+    path: /tmp/mysql
     state: directory 
 
 - name: Download MySQL 
