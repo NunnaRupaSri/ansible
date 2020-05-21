@@ -17,7 +17,7 @@
     dest: /tmp/pass-reset-schema.sql
 
 - name: Import Schema File for Password Reset
-  mysql_db
+  mysql_db:
     state: import
     name: all
     target: /tmp/pass-reset-schema.sql
