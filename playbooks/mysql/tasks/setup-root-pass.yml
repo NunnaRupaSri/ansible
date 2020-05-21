@@ -17,7 +17,7 @@
     dest: /tmp/pass-reset-schema.sql
 
 - name: Import Schema File for Password Reset
-  shell: mysql --connect-expired-password -uroot -p"{{out.stdout}}" </tmp/remove-plugin.sql
+  shell: mysql --connect-expired-password -uroot -p"{{out.stdout}}" </tmp/pass-reset-schema.sql
   #  state: import
   #  name: all
   #  target: /tmp/pass-reset-schema.sql
