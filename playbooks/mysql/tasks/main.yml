@@ -27,4 +27,4 @@
 
 - name: Set up defaullt root password
   include_tasks: setup-root-pass.yml
-  when: out is failed
+  when: out is failed 
