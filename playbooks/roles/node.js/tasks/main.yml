@@ -7,6 +7,8 @@
     src: "{{out.stdout}}"
     dest: /opt
     remote_src: yes
+    extra_opts:
+    - --strip=1
 
-- name: Rename NodeJS Directory
-  shell: mv /opt/node-v12.16.3-linux-x64 /opt/node
+#- name: Rename NodeJS Directory
+#  shell: mv /opt/node-v12.16.3-linux-x64 /opt/node
