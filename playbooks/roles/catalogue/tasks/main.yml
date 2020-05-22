@@ -24,7 +24,7 @@
 - name: copy systemcd service file
   copy:
     src: "{{APP_DIR}}/systemd.service"
-    dest: "/etc/systemd/system/catlogue.service"
+    dest: "/etc/systemd/system/{{APP_NAME}}.service"
     remote_src: yes
 
 
