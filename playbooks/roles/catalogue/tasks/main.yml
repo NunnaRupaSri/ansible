@@ -7,7 +7,7 @@
 - name: copy catalogue Appliction
   copy:
     src: /tmp/robo-shop/catalogue
-    dest: /root/ROBO-SHOP/catalogue
+    dest: /root/ROBO-SHOP
     remote_src: yes
   
 
