@@ -21,7 +21,7 @@
     regexp: "ROOT-DIR"
     replace: "{{APP_ROOT_DIR}}"
   
-- name: copy systemcd service file
+- name: copy systemd service file
   copy:
     src: "{{APP_DIR}}/systemd.service"
     dest: "/etc/systemd/system/{{APP_NAME}}.service"
@@ -35,5 +35,5 @@
 - name: start catalogue Application
   systemd:
     name: catalogue
-    state: started
+    state: restarted
     enabled: yes
