@@ -10,3 +10,4 @@
     - name: Print with . delimiter 
       debug:
         msg: "{{URL.split('.')[1]}}"
+        
