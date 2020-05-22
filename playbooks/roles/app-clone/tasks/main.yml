@@ -5,3 +5,8 @@
 - name: cleanup the repo
   import_tasks: cleanup.yml
   when: action == "clean"
+
+- name: Setup Application Directory
+  file:
+    path: /root/ROBO-SHOP
+    state: directory

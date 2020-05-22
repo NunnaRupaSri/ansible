@@ -3,4 +3,13 @@
     name: app-clone
     tasks_from: main
   vars: 
-    action: clone
+    ACTION: clone
+
+- name: copy catalogue Appliction
+  copy:
+    src: /tmp/robo-shop/catalogue
+    dest: /root/ROBO-SHOP/catalogue
+    romote_src: yes
+  
+
+
