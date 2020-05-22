@@ -1,0 +1,3 @@
+APP_NAME: catalogue
+APP_ROOTDIR: /root/ROBO-SHOP
+APP_DIR: "{{APP_ROOTDIR}}/{{APP_NAME}}"

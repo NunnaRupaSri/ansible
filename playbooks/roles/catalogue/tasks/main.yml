@@ -6,9 +6,15 @@
 
 - name: copy catalogue Appliction
   copy:
-    src: /tmp/robo-shop/catalogue
-    dest: /root/ROBO-SHOP
+    src: /tmp/robo-shop/{{APP_NAME}}
+    dest: "{{APP_ROOTDIR}}"
     remote_src: yes
+
+- name: install NodeJS Dependencies
+  shell: npm install
+  args:
+    chdir: "{{APP_DIR}}"
+
   
 
 
