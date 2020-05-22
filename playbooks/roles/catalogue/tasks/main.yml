@@ -8,7 +8,7 @@
   copy:
     src: /tmp/robo-shop/catalogue
     dest: /root/ROBO-SHOP/catalogue
-    romote_src: yes
+    remote_src: yes
   
 
 
