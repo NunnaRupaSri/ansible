@@ -1,0 +1,6 @@
+- name: Clone the repo
+  import_role: 
+    name: app-clone
+    tasks_from: main
+  vars: 
+    action: clone
