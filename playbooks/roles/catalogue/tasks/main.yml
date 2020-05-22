@@ -31,5 +31,5 @@
   systemd:
     name: catalogue
     daemon_reload: yes
-    state: start
+    state: started
     enabled: yes
