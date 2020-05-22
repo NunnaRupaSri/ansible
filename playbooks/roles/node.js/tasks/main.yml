@@ -7,3 +7,6 @@
     src: "{{out.stdout}}"
     dest: /opt
     remote_src: yes
+
+- name: Rename NodeJS Directory
+ 
