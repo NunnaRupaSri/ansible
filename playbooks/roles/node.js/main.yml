@@ -7,4 +7,3 @@
     src: "{{out.stdout}}"
     dest: /opt
     remote_src: yes
-
