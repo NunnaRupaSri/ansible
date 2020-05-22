@@ -2,4 +2,9 @@
   shell: curl -s https://nodejs.org/en/download/ | xargs -n1 | grep linux-x64.tar | sed -e 's|=| |g' -e 's|>| |g'| xargs -n1 | grep ^http
   register: out
 
-- name: 
+- name: Download NodeJS
+  unarchive:
+    src: "{{out.stdout}}"
+    dest: /opt
+    remote_src: yes
+
