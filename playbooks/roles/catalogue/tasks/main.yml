@@ -24,11 +24,11 @@
 - name: copy systemcd service file
   copy:
     src: "{{APP_DIR}}/systemd.service"
-    dest: "/etc/systemd/system/systemd.service"
+    dest: "/etc/systemd/system/catlogue.service"
     remote_src: yes
 
 
-- name: Daaemon
+- name: Daemon
   systemd:
     daemon_reload: yes
 
