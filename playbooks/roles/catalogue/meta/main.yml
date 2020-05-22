@@ -1,4 +1,6 @@
 ---
 dependencies:
- - node.js
- 
+  - role: node.js
+    vars:
+      INSTALL: true
+    
