@@ -28,7 +28,7 @@
     remote_src: yes
 
 
--name: Daaemon
+- name: Daaemon
   systemd:
     daemon_reload: yes
 
