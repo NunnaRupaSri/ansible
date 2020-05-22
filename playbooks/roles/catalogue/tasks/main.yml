@@ -27,9 +27,13 @@
     dest: "/etc/systemd/system/systemd.service"
     remote_src: yes
 
+
+-name: Daaemon
+  systemd:
+    daemon_reload: yes
+
 - name: start catalogue Application
   systemd:
     name: catalogue
-    daemon_reload: yes
     state: started
     enabled: yes
