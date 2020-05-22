@@ -15,6 +15,11 @@
   args:
     chdir: "{{APP_DIR}}"
 
+- name: Configure Systemd Service for catalogue Application
+  replace:
+    path: "{{APP_DIR}}/systemd.service"
+    regexp: "ROOT"
+
   
 
 
