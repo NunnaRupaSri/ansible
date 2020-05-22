@@ -1,9 +1,9 @@
 - name: Clone the repo
-  import_role: 
+  include_role: 
     name: app-clone
     tasks_from: main
   vars: 
-    ACTION: clone
+    action: clone
 
 - name: copy catalogue Appliction
   copy:
