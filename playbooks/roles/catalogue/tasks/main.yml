@@ -7,7 +7,7 @@
 - name: copy catalogue Appliction
   copy:
     src: /tmp/robo-shop/{{APP_NAME}}
-    dest: "{{APP_ROOTDIR}}"
+    dest: "{{APP_ROOT_DIR}}"
     remote_src: yes
 
 - name: install NodeJS Dependencies
@@ -18,8 +18,8 @@
 - name: Configure Systemd Service for catalogue Application
   replace:
     path: "{{APP_DIR}}/systemd.service"
-    regexp: "ROOT"
-
+    regexp: "ROOT-DIR"
+    replace: "{{APP_ROOT_DIR}}"
   
-
+  
 
