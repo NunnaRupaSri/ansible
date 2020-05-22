@@ -1,7 +1,7 @@
 - name: Clone the repo
   import_role: 
     name: app-clone
-      vars: 
+   vars: 
     action: clone
 
 - name: copy catalogue Appliction
