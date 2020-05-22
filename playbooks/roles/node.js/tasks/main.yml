@@ -13,4 +13,11 @@
 #- name: Rename NodeJS Directory
 #  shell: mv /opt/node-v12.16.3-linux-x64 /opt/node
 
-- name: NodeJS links
+- name: Make NodeJS links
+  file:
+    src: "{{iteam.src}}"
+    dest: "{{iteam.dest}}"
+  loop:   
+    - {"src": "/opt/node/bin/node", "dest": "/bin/node"}
+    - {"src": "/opt/node/bin/npm", "dest": /bin/npm"}
+    - {{"src": "/opt/node/bin/npx", "dest": /bin/npx"}
