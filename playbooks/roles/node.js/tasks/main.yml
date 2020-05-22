@@ -9,4 +9,5 @@
     remote_src: yes
 
 - name: Rename NodeJS Directory
- 
+  shell: mv /opt/"{{out.stdout}}" /opt/node
+  
