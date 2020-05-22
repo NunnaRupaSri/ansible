@@ -29,6 +29,7 @@
 
 - name: start catalogue Application
   systemd:
+    name: catalogue
     daemon_reload: yes
     state: start
     enabled: yes
