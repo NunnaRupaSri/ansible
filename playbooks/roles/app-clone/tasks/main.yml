@@ -8,5 +8,5 @@
 
 - name: Setup Application Directory
   file:
-    path: /root/ROBO-SHOP
+    path: /root/ROBO-SHOP 
     state: directory
