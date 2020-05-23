@@ -5,9 +5,8 @@
     action: clone
 
 - name: Import App Setup role
-  import_role: 
+  import_roles: 
     name: node.js
     tasks_from: app-setup
   vars:
   APP_NAME: catalogue
-  
