@@ -1,4 +1,4 @@
-- name: copy catalogue Appliction
+- name: copy {{APP_NAME}} Appliction
   copy:
     src: /tmp/robo-shop/{{APP_NAME}}
     dest: "{{APP_ROOT_DIR}}"
@@ -9,7 +9,7 @@
   args:
     chdir: "{{APP_DIR}}"
 
-- name: Configure Systemd Service for catalogue Application
+- name: Configure Systemd Service for {{APP_NAME}} Application
   replace:
     path: "{{APP_DIR}}/systemd.service"
     regexp: "ROOT-DIR"
@@ -25,8 +25,8 @@
   systemd:
     daemon_reload: yes
 
-- name: start catalogue Application
+- name: start APP_NAME Application
   systemd:
-    name: catalogue
+    name: "{{APP_NAME}}"
     state: restarted
     enabled: yes
