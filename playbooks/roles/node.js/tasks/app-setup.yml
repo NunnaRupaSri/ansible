@@ -25,7 +25,7 @@
   systemd:
     daemon_reload: yes
 
-- name: start APP_NAME Application
+- name: start {{APP_NAME}} Application
   systemd:
     name: "{{APP_NAME}}"
     state: restarted
