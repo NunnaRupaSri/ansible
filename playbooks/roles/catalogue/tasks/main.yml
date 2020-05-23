@@ -4,36 +4,10 @@
   vars: 
     action: clone
 
-- name: copy catalogue Appliction
-  copy:
-    src: /tmp/robo-shop/{{APP_NAME}}
-    dest: "{{APP_ROOT_DIR}}"
-    remote_src: yes
-
-- name: install NodeJS Dependencies
-  shell: npm install
-  args:
-    chdir: "{{APP_DIR}}"
-
-- name: Configure Systemd Service for catalogue Application
-  replace:
-    path: "{{APP_DIR}}/systemd.service"
-    regexp: "ROOT-DIR"
-    replace: "{{APP_ROOT_DIR}}"
+- name: Import App Setup role
+  import_role: 
+    name: node.js
+    tasks_from: app-setup
+  vars:
+  APP_NAME: catalogue
   
-- name: copy systemd service file
-  copy:
-    src: "{{APP_DIR}}/systemd.service"
-    dest: "/etc/systemd/system/{{APP_NAME}}.service"
-    remote_src: yes
-
-
-- name: Daemon
-  systemd:
-    daemon_reload: yes
-
-- name: start catalogue Application
-  systemd:
-    name: catalogue
-    state: restarted
-    enabled: yes
