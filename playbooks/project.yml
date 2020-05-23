@@ -6,5 +6,6 @@
   #  - rabbitmq
   #  - mysql
   #  - redis
-    - catalogue
+  #  - catalogue
+  - cart
   
