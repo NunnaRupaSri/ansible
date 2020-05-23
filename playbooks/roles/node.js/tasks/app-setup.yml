@@ -22,10 +22,10 @@
     remote_src: yes
 
 -name: replace a log name
-  replace:
+  lineinfile:
     path: "/etc/systemd/system/{{APP_NAME}}.service"
-    regexp: 'appen:/var/log/robo-shop/{{APP_NAME}}.log'
-    replace: 'syslog'
+    regexp: 'StandardOutput=append:/var/log/robo-shop/catalogue.log'
+    line: 'StandardOutput=syslog'
 
 - name: systemd Daemon-reload
   systemd:
