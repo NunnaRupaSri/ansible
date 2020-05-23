@@ -21,17 +21,6 @@
     dest: "/etc/systemd/system/{{APP_NAME}}.service"
     remote_src: yes
 
-- name: replace a log name
-  become: yes
-  lineinfile:
-    path: "/etc/systemd/system/{{APP_NAME}}.service"
-    regexp: '{{item.From}}'
-    line: '{{item.To}}'
-    state: present
-  with_items:
-    - {From: 'StandardOutput=append:/var/log/robo-shop/catalogue.log', To: 'StandardOutput=syslog'}
-    - {From: 'StandardError=append:/var/log/robo-shop/catalogue.log', To: 'StandardError=syslog'}
-
 
 - name: systemd Daemon-reload
   systemd:
