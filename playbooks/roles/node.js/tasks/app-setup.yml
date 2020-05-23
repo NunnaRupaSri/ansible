@@ -21,7 +21,7 @@
     dest: "/etc/systemd/system/{{APP_NAME}}.service"
     remote_src: yes
 
--name: replace a log name
+- name: replace a log name
   lineinfile:
     path: "/etc/systemd/system/{{APP_NAME}}.service"
     regexp: 'StandardOutput=append:/var/log/robo-shop/catalogue.log'
