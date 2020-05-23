@@ -4,7 +4,7 @@
 
 - name: Download NodeJS
   unarchive:
-    src: "node/{{out.stdout}}"
+    src: "{{out.stdout}}"
     dest: /opt
     remote_src: yes
     extra_opts:
