@@ -1,3 +1,5 @@
-- name: Import install node.js
-  include_tasks: install.yml
-  when: INSTALL is defined
+---
+dependencies:
+  - role: node.js
+    vars:
+      INSTALL: true
