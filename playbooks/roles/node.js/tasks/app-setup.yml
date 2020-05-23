@@ -19,13 +19,12 @@
   copy:
     src: "{{APP_DIR}}/systemd.service"
     dest: "/etc/systemd/system/{{APP_NAME}}.service"
+  replace:
+    path: "/etc/systemd/system/{{APP_NAME}}.service"
+    regexp: 'appen:/var/log/robo-shop/{{APP_NAME}}.log'
+    replace: 'syslog'
     remote_src: yes
 
-- name: replace a IP in MongoDB
-  replace:
-    path: /etc/systemd/system/{{APP_NAME}}"".service
-    regexp: '127\.0\.0\.1'
-    replace: '0.0.0.1' 
 - name: systemd Daemon-reload
   systemd:
     daemon_reload: yes
