@@ -6,7 +6,7 @@
 
 - name: Import App Setup Role
   import_role:
-    name: nodejs
+    name: node.js
     tasks_from: app-setup
   vars:
     APP_NAME: catalogue
